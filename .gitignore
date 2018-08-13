@@ -1,0 +1,21 @@
+xcuserdata/
+Pods/
+
+*.cer
+*.pkey
+*.pem
+*.dSYM.zip
+*.ipa
+
+# ruby
+.bundle/
+
+.env
+
+# fastlane
+#fastlane/report.xml
+#fastlane/Preview.html
+#fastlane/screenshots
+#fastlane/test_output
+
+!.gitkeep
