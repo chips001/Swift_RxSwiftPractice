@@ -99,7 +99,7 @@
 		647CBA4820ED8CC6006F8F7C /* Swift_RxSwiftPractice */ = {
 			isa = PBXGroup;
 			children = (
-				64E2EB0D2120F1B800667D0F /* Numbers */,
+				64E2EB0D2120F1B800667D0F /* AddNumbers */,
 				64E2EB052113C66400667D0F /* UIImagePickerExample */,
 				64E2EAFE210E7CA900667D0F /* UIPickerViewExample */,
 				64A0DEC12107E3DC00C8B724 /* NameWithPassword */,
@@ -244,12 +244,12 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		64E2EB0D2120F1B800667D0F /* Numbers */ = {
+		64E2EB0D2120F1B800667D0F /* AddNumbers */ = {
 			isa = PBXGroup;
 			children = (
 				64E2EB122120F66D00667D0F /* NumbersViewController.swift */,
 			);
-			path = Numbers;
+			path = AddNumbers;
 			sourceTree = "<group>";
 		};
 		F003937292CE968A9B3E7A2E /* Pods */ = {
