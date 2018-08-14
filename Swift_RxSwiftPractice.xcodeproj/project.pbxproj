@@ -28,6 +28,7 @@
 		64E2EB092119030500667D0F /* UIImagePickerController+RxCreate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E2EB082119030500667D0F /* UIImagePickerController+RxCreate.swift */; };
 		64E2EB0C211BA27D00667D0F /* UIImagePickerController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E2EB0B211BA27D00667D0F /* UIImagePickerController+Rx.swift */; };
 		64E2EB132120F66D00667D0F /* NumbersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E2EB122120F66D00667D0F /* NumbersViewController.swift */; };
+		64E2EB162123828A00667D0F /* SimpleValidationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E2EB152123828A00667D0F /* SimpleValidationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		64E2EB082119030500667D0F /* UIImagePickerController+RxCreate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImagePickerController+RxCreate.swift"; sourceTree = "<group>"; };
 		64E2EB0B211BA27D00667D0F /* UIImagePickerController+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImagePickerController+Rx.swift"; sourceTree = "<group>"; };
 		64E2EB122120F66D00667D0F /* NumbersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersViewController.swift; sourceTree = "<group>"; };
+		64E2EB152123828A00667D0F /* SimpleValidationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleValidationViewController.swift; sourceTree = "<group>"; };
 		8AC30A9C7472D0D8067448E6 /* Pods-Swift_RxSwiftPractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift_RxSwiftPractice.release.xcconfig"; path = "Pods/Target Support Files/Pods-Swift_RxSwiftPractice/Pods-Swift_RxSwiftPractice.release.xcconfig"; sourceTree = "<group>"; };
 		C696103E308CA4C62CABF024 /* Pods-Swift_RxSwiftPractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift_RxSwiftPractice.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Swift_RxSwiftPractice/Pods-Swift_RxSwiftPractice.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,6 +101,7 @@
 		647CBA4820ED8CC6006F8F7C /* Swift_RxSwiftPractice */ = {
 			isa = PBXGroup;
 			children = (
+				64E2EB14212380E500667D0F /* SimpleValidation */,
 				64E2EB0D2120F1B800667D0F /* AddNumbers */,
 				64E2EB052113C66400667D0F /* UIImagePickerExample */,
 				64E2EAFE210E7CA900667D0F /* UIPickerViewExample */,
@@ -252,6 +255,14 @@
 			path = AddNumbers;
 			sourceTree = "<group>";
 		};
+		64E2EB14212380E500667D0F /* SimpleValidation */ = {
+			isa = PBXGroup;
+			children = (
+				64E2EB152123828A00667D0F /* SimpleValidationViewController.swift */,
+			);
+			path = SimpleValidation;
+			sourceTree = "<group>";
+		};
 		F003937292CE968A9B3E7A2E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -396,6 +407,7 @@
 				64E2EB072113CB4700667D0F /* ImagePickerViewController.swift in Sources */,
 				647CBA6B20FD59D8006F8F7C /* Repository.swift in Sources */,
 				64E2EB132120F66D00667D0F /* NumbersViewController.swift in Sources */,
+				64E2EB162123828A00667D0F /* SimpleValidationViewController.swift in Sources */,
 				64A0DEC32107E40800C8B724 /* NameWithPasswordViewController.swift in Sources */,
 				647CBA6320F6C62A006F8F7C /* RamenViewModel.swift in Sources */,
 				647CBA5F20F57DE5006F8F7C /* Ramen.swift in Sources */,
