@@ -6,6 +6,8 @@ Pods/
 *.pem
 *.dSYM.zip
 *.ipa
+*.swp
+UserInterfaceState.xcuserstate
 
 # ruby
 .bundle/
