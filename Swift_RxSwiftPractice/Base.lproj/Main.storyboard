@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xId-iQ-qN2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="A71-jf-ldu">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -895,6 +895,140 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9CY-SY-0bG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2553" y="428"/>
+        </scene>
+        <!--Geolocation View Controller-->
+        <scene sceneID="IzD-5L-1E0">
+            <objects>
+                <viewController id="A71-jf-ldu" customClass="GeolocationViewController" customModule="Swift_RxSwiftPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Fm7-pL-keF"/>
+                        <viewControllerLayoutGuide type="bottom" id="wN1-cd-w9Z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EvD-Dv-UQ3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y8I-vv-HIG">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uEe-vo-8TK">
+                                        <rect key="frame" x="88" y="127" width="200" height="43"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="43" id="hRm-oq-ohK"/>
+                                        </constraints>
+                                        <string key="text">It seems that
+geolocation is enabled</string>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You can disable Geolocation on app's preferences and come back to the app to see what happens" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z7p-F3-RRB">
+                                        <rect key="frame" x="88" y="218.5" width="200" height="47"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="47" id="dFX-HW-6nJ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cF0-61-VkH">
+                                        <rect key="frame" x="88" y="281.5" width="200" height="28"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="28" id="EzM-Qf-3Oe"/>
+                                        </constraints>
+                                        <state key="normal" title="OPEN APP PREFERENCES">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oxb-Ib-qF2">
+                                        <rect key="frame" x="88" y="183" width="200" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Oxb-Ib-qF2" firstAttribute="leading" secondItem="y8I-vv-HIG" secondAttribute="leading" constant="88" id="1fH-rj-8fS"/>
+                                    <constraint firstAttribute="trailing" secondItem="cF0-61-VkH" secondAttribute="trailing" constant="87" id="8iW-IA-0eR"/>
+                                    <constraint firstItem="uEe-vo-8TK" firstAttribute="leading" secondItem="y8I-vv-HIG" secondAttribute="leading" constant="88" id="8vF-Sd-jeR"/>
+                                    <constraint firstItem="uEe-vo-8TK" firstAttribute="top" secondItem="y8I-vv-HIG" secondAttribute="top" constant="127" id="CWa-E2-mfh"/>
+                                    <constraint firstItem="cF0-61-VkH" firstAttribute="top" secondItem="z7p-F3-RRB" secondAttribute="bottom" constant="16" id="LsR-px-czY"/>
+                                    <constraint firstAttribute="trailing" secondItem="uEe-vo-8TK" secondAttribute="trailing" constant="87" id="NjR-ee-XRg"/>
+                                    <constraint firstAttribute="trailing" secondItem="z7p-F3-RRB" secondAttribute="trailing" constant="87" id="QEU-Ud-BK9"/>
+                                    <constraint firstAttribute="trailing" secondItem="Oxb-Ib-qF2" secondAttribute="trailing" constant="87" id="YPw-6v-eWJ"/>
+                                    <constraint firstItem="Oxb-Ib-qF2" firstAttribute="top" secondItem="uEe-vo-8TK" secondAttribute="bottom" constant="13" id="co4-7m-bVw"/>
+                                    <constraint firstItem="cF0-61-VkH" firstAttribute="leading" secondItem="y8I-vv-HIG" secondAttribute="leading" constant="88" id="mjv-EW-SaS"/>
+                                    <constraint firstItem="z7p-F3-RRB" firstAttribute="leading" secondItem="y8I-vv-HIG" secondAttribute="leading" constant="88" id="odr-n0-icq"/>
+                                    <constraint firstItem="z7p-F3-RRB" firstAttribute="top" secondItem="Oxb-Ib-qF2" secondAttribute="bottom" constant="15" id="tqH-PD-Lag"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="y8I-vv-HIG" firstAttribute="top" secondItem="Fm7-pL-keF" secondAttribute="bottom" constant="44" id="KLa-y3-cer"/>
+                            <constraint firstAttribute="trailing" secondItem="y8I-vv-HIG" secondAttribute="trailing" id="Ors-vk-aKP"/>
+                            <constraint firstItem="y8I-vv-HIG" firstAttribute="leading" secondItem="EvD-Dv-UQ3" secondAttribute="leading" id="t1g-z8-Kl7"/>
+                            <constraint firstItem="wN1-cd-w9Z" firstAttribute="top" secondItem="y8I-vv-HIG" secondAttribute="bottom" id="wIl-7r-Mlv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="bLS-l9-xFM" id="KHm-zn-wbg"/>
+                        <outlet property="button2" destination="cF0-61-VkH" id="le8-lZ-fdB"/>
+                        <outlet property="label" destination="Oxb-Ib-qF2" id="way-L3-1y8"/>
+                        <outlet property="noGeolocationView" destination="Rhb-fy-580" id="wja-Z4-IeW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0pZ-Yp-jRQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="Rhb-fy-580">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enable it in the app preferences" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5o6-pU-4A2">
+                            <rect key="frame" x="48" y="242" width="280" height="43"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="43" id="BId-Ow-TRw"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bLS-l9-xFM">
+                            <rect key="frame" x="88" y="315" width="200" height="28"/>
+                            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="28" id="QrE-ZX-ZI2"/>
+                            </constraints>
+                            <state key="normal" title="OPEN APP PREFERENCES">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Geolocation is not enabled for this app" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hRB-Ll-UT2">
+                            <rect key="frame" x="47" y="126" width="280" height="64"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="64" id="461-a7-b0Y"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                            <color key="textColor" red="1" green="0.057822811379999998" blue="0.1275630254" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="hRB-Ll-UT2" firstAttribute="leading" secondItem="Rhb-fy-580" secondAttribute="leading" constant="47" id="3ra-hu-icb"/>
+                        <constraint firstItem="5o6-pU-4A2" firstAttribute="top" secondItem="hRB-Ll-UT2" secondAttribute="bottom" constant="52" id="3w8-pU-HN9"/>
+                        <constraint firstAttribute="trailing" secondItem="hRB-Ll-UT2" secondAttribute="trailing" constant="48" id="HBk-rD-2rv"/>
+                        <constraint firstAttribute="trailing" secondItem="bLS-l9-xFM" secondAttribute="trailing" constant="87" id="Nf9-UE-cTT"/>
+                        <constraint firstItem="5o6-pU-4A2" firstAttribute="leading" secondItem="Rhb-fy-580" secondAttribute="leading" constant="48" id="QZm-fZ-9Kk"/>
+                        <constraint firstAttribute="trailing" secondItem="5o6-pU-4A2" secondAttribute="trailing" constant="47" id="SNF-tz-SMU"/>
+                        <constraint firstItem="bLS-l9-xFM" firstAttribute="leading" secondItem="Rhb-fy-580" secondAttribute="leading" constant="88" id="Yad-Tt-nOw"/>
+                        <constraint firstItem="bLS-l9-xFM" firstAttribute="top" secondItem="5o6-pU-4A2" secondAttribute="bottom" constant="30" id="kea-rH-R7q"/>
+                        <constraint firstItem="hRB-Ll-UT2" firstAttribute="top" secondItem="Rhb-fy-580" secondAttribute="top" constant="126" id="rtO-TO-GZI"/>
+                    </constraints>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="3409" y="1484"/>
         </scene>
         <!--Simple Validation View Controller-->
         <scene sceneID="Sly-eg-kJC">
