@@ -22,7 +22,6 @@ private extension Reactive where Base: UILabel {
      RxSwiftにはbindToが大きく分けて2種類あります。
      引数にobserverを取るものと、binderを取るものです。 引数にvariableを取るものは基本observableを取るものと動きが同じです。
      */
-    
     var coordinate: Binder<CLLocationCoordinate2D> {
         return Binder(base) { label, location in
             label.text = "Lat: \(location.latitude)\nLon:\(location.longitude)"
